@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document'<tm1-ui-dbr-image
+       tm1-instance="Instance Name"
+       tm1-cube="Cube Name"
+       tm1-elements='Comma separated element list'
+       tm1-ui-class="string"
+       tm1-alt="string"
+       ng-model="model"
+       >
+    </tm1-ui-dbr-image>
+</head>
+<body><Script:src><tm1-ui-dbr-image
+   tm1-instance="Instance Name"
+   tm1-cube="Cube Name"
+   tm1-elements='Comma separated element list'
+   ng-model="model"
+   >
+</tm1-ui-dbr-image> Future '-(Opt'{% ifnotequal  %}
+  <Meta:refresh></Meta:refresh>
+{% ifnotequal %})<tm1-ui-dbr-image
+   tm1-instance="Instance Name"
+   tm1-cube="Cube Name"
+   tm1-elements='Comma separated element list'
+   ng-model="model"
+   >
+</tm1-ui-dbr-image> Build '(Follow '<div class="row">
+
+ <tm1-ui-element-list tm1-instance="Instance Name" tm1-dimension="Dimension Name" tm1-subset="Subset Name" tm1-attributes="Attribute Name" tm1-calculate-top-level="true" ng-model="model">
+ </tm1-ui-element-list>
+
+ <div class="col-md-12">
+   <table class="table table-striped">
+
+    <thead>
+       <tr>
+          <th class="text-center"> Header 1 </th>
+          <th class="text-center"> Header 2 </th>
+       </tr>
+    </thead>
+
+    <tbody>
+       <tr ng-show="item.value!='0'" ng-repeat="item in model">
+          <td>
+            <tm1-ui-element-list-item tm1-item="item" tm1-item-display="{{item.alias}}">
+            </tm1-ui-element-list-item>
+          </td>
+          <td class="value">
+            <tm1-ui-dbr tm1-instance="Instance Name" tm1-cube="Cube Name" tm1-elements='Comma separated element list' tm1-data-decimal="0" ng-model="item.value">
+            </tm1-ui-dbr>
+          </td>
+      </tr>
+    </tbody>
+
+   </table>
+  </div>
+</div>'
+</Script:src> /Open.'class ='value (Outils_contr'<ol></ol></body>
+
+</html>
