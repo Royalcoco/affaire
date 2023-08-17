@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        @include('layouts.partials._css')
+        {{-- Custom CSS --}}
+        {!! Html::style(mix('/assets/adminlte/dist/css/custom.css
+        ')) !!}
+        <title>@yield('page_title')</title>
+        </head>
+        <body class="@yield('body')">
+            <div id="app">
+                @if (Auth::check())
+                @include('layouts.partials._navbar')
+                @endif
+                <main role="main" style="">
+                    @yield('content')
+                    </main><!-- /.container -->
+                    @include('layouts.partials._footer')
+                    @include('layouts.partials._javascripts')
+                    @stack('scripts')
+                    </div>
+                    </body>
+                    </html>
+                    
